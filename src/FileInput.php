@@ -141,7 +141,7 @@ class FileInput extends InputWidget
         if ($this->resizeImages || $this->autoOrientImages) {
             PiExifAsset::register($view);
         }
-        if (empty($this->pluginOptions['theme']) && $this->isBs4()) {
+        if (empty($this->pluginOptions['theme']) && $this->isBs3()) {
             $this->pluginOptions['theme'] = 'fas';
         }
         $theme = ArrayHelper::getValue($this->pluginOptions, 'theme');
